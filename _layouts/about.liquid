@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 ---
 <div class="post">
@@ -41,13 +41,22 @@ layout: default
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
+    {% if page.home_sections and page.home_sections.show_news and page.announcements and page.announcements.enabled %}
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
 
+    {% if page.home_sections and page.home_sections.show_timeline %}
+      <!-- ========== RESUME ========== -->
+      <div class="docs-section" id="resume">
+        <h2>
+          <a href="{{ '/resume/' | relative_url }}" style="color: inherit">resume</a>
+        </h2>
+        {% include timeline.liquid %}
+      </div>
+    {% endif %}
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
@@ -78,3 +87,4 @@ layout: default
     {% endif %}
   </article>
 </div>
+

@@ -21,6 +21,10 @@ announcements:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
+home_sections:
+  show_timeline: true
+  show_news: false
+
 #latest_posts:
 #  enabled: true
 #  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items

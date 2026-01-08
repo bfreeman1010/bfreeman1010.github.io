@@ -54,10 +54,11 @@ posts_in_search: true
 bib_search: true
 
 #Navbar logo
-navbar_logo: /assets/img/prof_pic.jpg # path to the logo image shown in the navbar (leave empty to disable)
-navbar_logo_alt: Institution logo
+navbar_logo: /assets/img/UAH_Logo.png # path to the logo image shown in the navbar (leave empty to disable)
+navbar_logo_alt: UAH logo
 navbar_logo_height: 32
-navbar_logo_width: 32
+navbar_logo_width: 30
+
 
 
 # Dimensions
