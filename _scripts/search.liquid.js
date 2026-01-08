@@ -7,7 +7,10 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [
   {%- for page in site.pages -%}
-    {%- if page.permalink == '/' -%}{%- assign about_title = page.title | strip -%}{%- endif -%}
+    {%- if page.permalink == '/' -%}
+      {%- assign about_title = page.title | strip -%}
+      {%- assign about_page = page -%}
+    {%- endif -%}
   {%- endfor -%}
   {
     id: "nav-{{ about_title | slugify }}",
@@ -17,6 +20,16 @@ ninja.data = [
       window.location.href = "{{ '/' | relative_url }}";
     },
   },
+  {%- if about_page and about_page.home_sections and about_page.home_sections.show_timeline -%}
+  {
+    id: "nav-resume",
+    title: "resume",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "{{ '/resume/' | relative_url }}";
+    },
+  },
+  {%- endif -%}
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
     {%- if p.nav and p.autogen == null -%}

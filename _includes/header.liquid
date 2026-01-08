@@ -2,37 +2,7 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if site.navbar_logo %}
-        <a class="navbar-logo" href="{{ site.baseurl }}/" aria-label="{{ site.navbar_logo_alt | default: 'Logo' }}">
-          <img
-          src="{{ site.navbar_logo | relative_url | bust_file_cache }}"
-          alt="{{ site.navbar_logo_alt | default: 'Logo' }}"
-          style="height: {{ site.navbar_logo_height | default: 32 }}px;"
-          />
-        </a>
-      {% endif %}
-
-      {% if page.permalink != '/' %}
-        {% if site.navbar_logo == blank %}
-          <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-            {% if site.title == 'blank' %}
-              {% if site.first_name %}
-                <span class="font-weight-bold">
-                  {{- site.first_name -}}
-                </span>
-              {% endif %}
-              {% if site.middle_name %}
-                {{- site.middle_name -}}
-              {% endif %}
-              {% if site.last_name %}
-                {{- site.last_name -}}
-              {% endif %}
-            {% else %}
-              {{- site.title -}}
-            {% endif %}
-          </a>
-        {% endif %}
-      {% elsif site.enable_navbar_social %}
+      {% if site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
