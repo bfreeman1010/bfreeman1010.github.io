@@ -199,14 +199,64 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
 
   .more-info {
+    font-size: 11px;
+    text-align: right;
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
 
     p {
-      display: inline-block;
+      display: block;
       margin: 0;
     }
+  }
+}
+
+.profile.profile-top-left {
+  float: none;
+  margin-bottom: 2rem;
+  text-align: left;
+  width: 100%;
+
+  .profile-image {
+    display: block;
+  }
+}
+
+.post.post-about {
+  .post-header,
+  article {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.post.post-about {
+  .timeline {
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.post.post-about {
+  @media (min-width: 661px) {
+    .timeline .direction-l,
+    .timeline .direction-r {
+      width: 45%;
+    }
+  }
+}
+
+.post.post-about {
+  .profile.profile-top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -224,9 +274,46 @@ ul.task-list input[type="checkbox"] {
 
     .address {
       p {
-        display: block;
+        display: inline-block;
       }
     }
+  }
+
+  .post.post-about {
+    .post-header,
+    article {
+      max-width: 60%;
+    }
+  }
+
+  .post.post-about {
+    .profile.profile-top-left {
+      width: 60%;
+    }
+  }
+}
+
+.post.post-about {
+  .profile.profile-top-left {
+    .profile-image {
+      display: flex;
+      justify-content: center;
+
+      figure {
+        margin: 0 0 0.2rem;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      width: 16vw;
+    }
+  }
+}
+
+.post.post-about {
+  .social-under-profile {
+    margin-top: 0;
   }
 }
 
@@ -469,6 +556,26 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.post.post-about {
+  .social-under-profile {
+    margin-top: 0.1rem;
+    text-align: center;
+
+    .contact-icons {
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+      text-align: center;
+      line-height: 1;
+    }
+  }
+}
 .wechat-modal {
   display: none;
   position: fixed;
@@ -1511,3 +1618,4 @@ figure.cover {
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
 }
+

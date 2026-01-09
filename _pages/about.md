@@ -2,16 +2,33 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
+#<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: prof_pic_no_background.png
+  image_circular: true # crops the image to make it circular
+  # more_info: >
+  #   <p>
+  #   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cc1115@uah.edu">
+  #   cc1115@uah.edu
+  #   </a>
+  #   </p>
+  #
+  #   <p>
+  #   256.824.6637
+  #   </p>
+  #
+  #   <p>
+  #   <a href="https://www.google.com/maps/search/?api=1&query=N133%2C%20Olin%20B.%20King%20Technology%20Hall%2C%20Huntsville%2C%20AL">
+  #   N133, Olin B. King Technology Hall
+  #   </a>
+  #   </p>
+  #
+  # THIS GOES UNDER THE PROF_PICTURE , Uncomment to include/show
+    
+
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -41,5 +58,5 @@ home_sections:
 
 ---
 
-Dr. Cheng Chen is an assistant professor in the Department of Industrial & Systems Engineering & Engineering Management (ISEEM). Prior to joining UAH, he was a postdoctoral researcher at the Innovation Factory and taught as a limited-term instructor in the College of Engineering at the University of Georgia from 2022 to 2024. During this time, he contributed to data analysis for assembly line research, secured industrial funding, and actively served at ASME IDETC conferences.
+**[Dr. Cheng Chen](https://www.uah.edu/eng/faculty-staff/cheng-chen)** is an assistant professor in the [Department of Industrial & Systems Engineering & Engineering Management (ISEEM)](https://www.uah.edu/eng/departments/iseem). Prior to joining UAH, he was a postdoctoral researcher at the Innovation Factory and taught as a limited-term instructor in the College of Engineering at the [University of Georgia](https://www.uga.edu/) from 2022 to 2024. During this time, he contributed to data analysis for assembly line research, secured industrial funding, and actively served at [ASME IDETC](https://www.asme.org/conferences-events/idetc-cie) conferences.
 

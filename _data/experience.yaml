@@ -4,7 +4,7 @@
   time: "2023 - now"
   title: "Test Title 1"
   subtitle: "Test Subtitle 1"
-  category: "work"
+  category: "test"
 
 - place: "Test Place 2"
   time: "2020 - 2023"
@@ -28,7 +28,7 @@
   time: "Summer 2016"
   title: "Test Title 5"
   subtitle: "Test Subtitle 5"
-  category: "work"
+  category: "test"
 
 - place: "Test Place 6"
   time: "Summer 2014"
@@ -40,29 +40,7 @@
   time: "Feb-Aug 2013"
   title: "Test Title 7"
   subtitle: "Test Subtitle 7"
-  category: "work"
-
-- place: "Test Place 8"
-  time: "Sep 2011 - Aug 2013"
-  title: "Test Title 8"
-  subtitle: "Test Subtitle 8"
-  category: "school"
-
-- place: "Test Place 9"
-  time: "Jan-Aug 2011"
-  title: "Test Title 9"
-  subtitle: "Test Subtitle 9"
-  category: "work"
-
-- place: "Test Place 10"
-  time: "2007 - 2010"
-  title: "Test Title 10"
-  subtitle: "Test Subtitle 10"
-  category: "school"
-
-- place: "Test Place 11"
-  time: "N/A"
-  title: "Test Title 11"
-  subtitle: "Test Subtitle 11"
   category: "test"
+
+
 
