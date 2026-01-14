@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - ChengC2019
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - ChengC2019/advanced-data-management-and-analytics
+  - ChengC2019/Website
+  - ChengC2019/HerokuChatbot

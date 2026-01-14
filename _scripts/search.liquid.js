@@ -20,6 +20,24 @@ ninja.data = [
       window.location.href = "{{ '/' | relative_url }}";
     },
   },
+  {
+    id: "nav-biography",
+    title: "biography",
+    description: "Biography page",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "{{ '/biography/' | relative_url }}";
+    },
+  },
+  {
+    id: "nav-acknowledgements",
+    title: "acknowledgements",
+    description: "Acknowledgements section",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "{{ '/' | relative_url }}#acknowledgements";
+    },
+  },
   {%- if about_page and about_page.home_sections and about_page.home_sections.show_timeline -%}
   {
     id: "nav-resume",

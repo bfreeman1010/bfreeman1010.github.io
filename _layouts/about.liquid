@@ -1,50 +1,64 @@
-﻿---
+---
 layout: default
 ---
 <div class="post post-about">
-  {% if page.profile and page.profile.image %}
-    <div class="profile profile-top-left">
-      <div class="profile-image">
-        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-        {% if page.profile.image_circular %}
-          {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-        {% else %}
-          {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+{% assign has_profile_image = false %}
+{% if page.profile and page.profile.image %}
+  {% assign has_profile_image = true %}
+{% endif %}
+  <section class="about-master-header header">
+    <div class="row">
+      {% if has_profile_image %}
+        <div class="col-md-3">
+          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+          {% if page.profile.image_circular %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+          {% else %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+          {% endif %}
+          {% capture sizes %}(min-width: 750px) 170px, (min-width: 576px) 40vw, 60vw"{% endcapture %}
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            cache_bust=true
+          %}
+        </div>
+      {% endif %}
+      <div class="{% if has_profile_image %}col-md-9{% else %}col-12{% endif %} main-description">
+        <h1>
+          {% if site.title == 'blank' %}
+            <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+            {{ site.last_name }}
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+        {% if page.subtitle and page.subtitle != '' %}
+          <p>{{ page.subtitle }}</p>
         {% endif %}
-        {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.2}}px, (min-width: 576px) 20vw, 20vw"{% endcapture %}
-        {%
-          include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-          cache_bust=true
-        %}
+        {% if page.institution and page.institution != '' %}
+          <p>{{ page.institution }}</p>
+        {% endif %}
+        {% if page.email and page.email != '' %}
+          <p>
+            <a href="mailto:{{ page.email | encode_email }}"><strong>{{ page.email }}</strong></a>
+          </p>
+        {% endif %}
+        {% if page.social %}
+          <div class="about-social-inline contact-icons">{% include social.liquid %}</div>
+        {% endif %}
       </div>
     </div>
-  {% endif %}
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    {% if page.subtitle and page.subtitle != '' %}
-      <p class="desc">{{ page.subtitle }}</p>
-    {% endif %}
-  </header>
+  </section>
 
   <article>
-    {% if page.profile and page.profile.more_info %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        <div class="more-info">{{ page.profile.more_info }}</div>
-      </div>
-    {% endif %}
-
+    <h2 id="biography" class="section-title">
+      <a href="{{ '/biography/' | relative_url }}" style="color: inherit">biography</a>
+    </h2>
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
     {% if page.home_sections and page.home_sections.show_news and page.announcements and page.announcements.enabled %}
-      <h2>
+      <h2 class="section-title">
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
       {% include news.liquid limit=true %}
@@ -53,15 +67,34 @@ layout: default
     {% if page.home_sections and page.home_sections.show_timeline %}
       <!-- ========== RESUME ========== -->
       <div class="docs-section" id="resume">
-        <h2>
+        <h2 class="section-title">
           <a href="{{ '/resume/' | relative_url }}" style="color: inherit">resume</a>
         </h2>
         {% include timeline.liquid %}
       </div>
     {% endif %}
+
+    <div class="docs-section" id="acknowledgements">
+      <h2 class="section-title">
+        <a href="#acknowledgements" style="color: inherit">acknowledgements</a>
+      </h2>
+      <p>
+        
+        &copy; Copyright {{ site.time | date: '%Y' }}
+        {{ site.first_name }}
+        {{ site.middle_name }}
+        {{ site.last_name }}. {{ site.footer_text }}
+        {% if site.impressum_path %}
+          <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+        {% endif %}
+        {% if site.last_updated %}
+          Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+        {% endif %}
+      </p>
+    </div>
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
+      <h2 class="section-title">
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
       </h2>
       {% include latest_posts.liquid %}
@@ -69,19 +102,10 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
+      <h2 class="section-title">
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
       </h2>
       {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
@@ -89,4 +113,3 @@ layout: default
     {% endif %}
   </article>
 </div>
-

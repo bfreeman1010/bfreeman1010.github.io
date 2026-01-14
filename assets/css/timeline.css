@@ -1,12 +1,13 @@
 /* ================ The Timeline ================ */
 .timeline {
   position: relative;
-  width: 800px;
+  width: 720px;
   margin: 0 auto;
-  margin-top: 20px;
-  padding: 1em 0;
+  margin-top: 16px;
+  padding: 0.75em 0;
   padding-left: 0;
   list-style-type: none;
+  font-size: 0.9rem;
 }
 
 .timeline:before {
@@ -15,7 +16,7 @@
   top: 0;
   content: ' ';
   display: block;
-  width: 6px;
+  width: 4px;
   height: 100%;
   transform: translateX(-50%);
   background: rgb(80,80,80);
@@ -31,7 +32,7 @@
 
 .timeline li {
   position: relative;
-  padding: 1em 0;
+  padding: 0.75em 0;
 }
 
 .timeline li:after {
@@ -44,14 +45,14 @@
 
 .direction-l {
   position: relative;
-  width: 370px;
+  width: 330px;
   float: left;
   text-align: right;
 }
 
 .direction-r {
   position: relative;
-  width: 370px;
+  width: 330px;
   float: right;
 }
 
@@ -66,7 +67,7 @@
   position: relative;
   display: inline;
   background: rgb(248,248,248);
-  padding: 6px 10px;
+  padding: 5px 8px;
   border-radius: 5px;
   
   font-weight: 600;
@@ -89,20 +90,20 @@
 .direction-r .flag:before {
   position: absolute;
   top: 50%;
-  right: -40px;
+  right: -32px;
   content: ' ';
   display: block;
-  width: 20px;
-  height: 20px;
-  margin-top: -14px;
+  width: 16px;
+  height: 16px;
+  margin-top: -11px;
   background: #fff;
   border-radius: 50%;
-  border: 4px solid var(--global-theme-color);
+  border: 3px solid var(--global-theme-color);
   z-index: 10;
 }
 
 .direction-r .flag:before {
-  left: -40px;
+  left: -32px;
   right: auto;
 }
 
@@ -111,13 +112,13 @@
     content: '';
     position: absolute;
     left: 50%;
-    top: 2.5em;
-    width: 20px;
-    height: 20px;
-    margin-top: -14px;
+    top: 2.1em;
+    width: 16px;
+    height: 16px;
+    margin-top: -11px;
     background: #fff;
     border-radius: 50%;
-    border: 4px solid var(--global-theme-color);
+    border: 3px solid var(--global-theme-color);
     transform: translate(-50%, -50%);
     z-index: 10;
   }
@@ -135,10 +136,10 @@
   top: 50%;
   height: 0;
   width: 0;
-  margin-top: -8px;
+  margin-top: -6px;
   border: solid transparent;
   border-left-color: rgb(248,248,248);
-  border-width: 8px;
+  border-width: 6px;
   pointer-events: none;
 }
 
@@ -149,10 +150,10 @@
   top: 50%;
   height: 0;
   width: 0;
-  margin-top: -8px;
+  margin-top: -6px;
   border: solid transparent;
   border-right-color: rgb(248,248,248);
-  border-width: 8px;
+  border-width: 6px;
   pointer-events: none;
 }
 
@@ -160,7 +161,7 @@
   display: inline;
   
   line-height: 1em;
-  font-size: 0.66666em;
+  font-size: 0.6em;
   color: var(--global-theme-color);
   vertical-align: middle;
 }
@@ -175,20 +176,24 @@
 
 .time {
   display: inline-block;
-  padding: 4px 6px;
+  padding: 3px 5px;
   background: rgb(248,248,248);
   color: var(--global-theme-color);
 }
 
 .desc {
-  margin: 1em 0.75em 0 0;
-  font-size: 0.77777em;
+  margin: 0.75em 0.6em 0 0;
+  font-size: 0.72em;
   /* font-style: italic; */
   line-height: 1.5em;
 }
 
 .direction-r .desc {
-  margin: 1em 0 0 0.75em;
+  margin: 0.75em 0 0 0.6em;
+}
+
+.timeline .timeline-link {
+  color: var(--global-theme-color);
 }
 
 html[data-theme="dark"] .flag {
@@ -216,38 +221,38 @@ html[data-theme="dark"] .direction-r .flag:after {
 
 @media screen and (max-width: 1000px) {
   .timeline {
-    width: 640px;
+    width: 600px;
   }
 
   .direction-l {
     position: relative;
-    width: 290px;
+    width: 270px;
     float: left;
     text-align: right;
   }
 
   .direction-r {
     position: relative;
-    width: 290px;
+    width: 270px;
     float: right;
   }
 }
 
 @media screen and (max-width: 800px) {
   .timeline {
-    width: 620px;
+    width: 560px;
   }
 
   .direction-l {
     position: relative;
-    width: 280px;
+    width: 250px;
     float: left;
     text-align: right;
   }
 
   .direction-r {
     position: relative;
-    width: 280px;
+    width: 250px;
     float: right;
   }
 }
@@ -256,11 +261,11 @@ html[data-theme="dark"] .direction-r .flag:after {
 
   .timeline {
     width: 100%;
-    padding: 4em 0 1em 0;
+    padding: 3em 0 0.75em 0;
   }
 
   .timeline li {
-    padding: 2em 0;
+    padding: 1.5em 0;
   }
 
   .direction-l,
@@ -283,15 +288,15 @@ html[data-theme="dark"] .direction-r .flag:after {
   .direction-l .flag:before,
   .direction-r .flag:before {
     position: absolute;
-    top: -30px;
+    top: -26px;
     left: 50%;
     content: ' ';
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background: #fff;
     border-radius: 50%;
-    border: 4px solid var(--global-theme-color);
+    border: 3px solid var(--global-theme-color);
     transform: translateX(-50%);
     z-index: 10;
   }
@@ -301,13 +306,13 @@ html[data-theme="dark"] .direction-r .flag:after {
     content: "";
     position: absolute;
     left: 50%;
-    top: -8px;
+    top: -6px;
     height: 0;
     width: 0;
-    margin-left: -8px;
+    margin-left: -6px;
     border: solid transparent;
     border-bottom-color: rgb(255,255,255);
-    border-width: 8px;
+    border-width: 6px;
     pointer-events: none;
   }
 
@@ -321,7 +326,7 @@ html[data-theme="dark"] .direction-r .flag:after {
   .time-wrapper {
     display: block;
     position: relative;
-    margin: 4px 0 0 0;
+    margin: 3px 0 0 0;
     z-index: 14;
   }
 
@@ -336,7 +341,7 @@ html[data-theme="dark"] .direction-r .flag:after {
   .desc {
     position: relative;
     margin: 1em 0 0 0;
-    padding: 1em;
+    padding: 0.75em;
     background: rgb(245,245,245);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
@@ -349,7 +354,7 @@ html[data-theme="dark"] .direction-r .flag:after {
   .direction-r .desc {
     position: relative;
     margin: 1em 1em 0 1em;
-    padding: 1em;
+    padding: 0.75em;
     
     z-index: 15;
   }

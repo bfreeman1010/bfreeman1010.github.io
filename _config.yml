@@ -13,7 +13,6 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: C_Favicon.png
@@ -56,7 +55,7 @@ bib_search: true
 #Navbar logo
 
 # Dimensions
-max_width: 930px
+max_width: 900px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -283,7 +282,7 @@ scholar:
   last_name: [Einstein]
   first_name: [Albert, A.]
 
-  style: apa
+  style: modern-language-association
   locale: en
 
   source: /_bibliography/
@@ -641,20 +640,6 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+jekyll_get_json: []
 
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+jsonresume: []

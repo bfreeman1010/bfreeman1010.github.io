@@ -2,13 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: Assistant Professor
+institution: University of Alabama in Huntsville
+email: cc1115@uah.edu
 #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: prof_pic_no_background.png
-  image_circular: true # crops the image to make it circular
+  image_circular: false # keeps the image square
   # more_info: >
   #   <p>
   #   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cc1115@uah.edu">
@@ -30,7 +32,7 @@ profile:
     
 
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -58,5 +60,4 @@ home_sections:
 
 ---
 
-**[Dr. Cheng Chen](https://www.uah.edu/eng/faculty-staff/cheng-chen)** is an assistant professor in the [Department of Industrial & Systems Engineering & Engineering Management (ISEEM)](https://www.uah.edu/eng/departments/iseem). Prior to joining UAH, he was a postdoctoral researcher at the Innovation Factory and taught as a limited-term instructor in the College of Engineering at the [University of Georgia](https://www.uga.edu/) from 2022 to 2024. During this time, he contributed to data analysis for assembly line research, secured industrial funding, and actively served at [ASME IDETC](https://www.asme.org/conferences-events/idetc-cie) conferences.
-
+{% include about_content.md %}

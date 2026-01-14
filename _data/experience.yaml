@@ -1,46 +1,43 @@
-﻿experiences:
+experiences:
 
-- place: "Test Place 1"
-  time: "2023 - now"
-  title: "Test Title 1"
-  subtitle: "Test Subtitle 1"
-  category: "test"
-
-- place: "Test Place 2"
-  time: "2020 - 2023"
-  title: "Test Title 2"
-  subtitle: "Test Subtitle 2"
+- place: "UAH"
+  time: "Aug 2024 - Present"
+  title: "Assistant Professor (Tenure Track)"
+  subtitle: "<span class=\"timeline-link\">University of Alabama in Huntsville</span>; Industrial & Systems Engineering and Engineering Management; Director, Integrated Computing Lab; Co-director, Digital X Lab"
   category: "work"
 
-- place: "Test Place 3"
-  time: "2014 - 2020"
-  title: "Test Title 3"
-  subtitle: "Test Subtitle 3"
+- place: "UGA"
+  time: "2022 - 2024"
+  title: "Postdoc and Instructor"
+  subtitle: "<span class=\"timeline-link\">University of Georgia</span>; College of Engineering; Supervisor: Dr. Jaime Camelio"
+  category: "work"
+
+- place: "UGA"
+  time: "Aug 2019 - Jul 2022"
+  title: "Graduate Research Assistant"
+  subtitle: "<span class=\"timeline-link\">University of Georgia</span>; Advisor: Dr. Beshoy Morkos"
+  category: "work"
+
+- place: "FIT"
+  time: "Aug 2018 - Aug 2019"
+  title: "Research Assistant"
+  subtitle: "<span class=\"timeline-link\">Florida Institute of Technology</span>; Department of Mechanical and Aerospace Engineering"
+  category: "work"
+
+- place: "UGA"
+  time: "Jul 2022"
+  title: "Ph.D., Mechanical Engineering"
+  subtitle: "<span class=\"timeline-link\">University of Georgia</span>; Dissertation: Realization of Inter-Model Connections: Linking Requirements and Computer-Aided Design"
   category: "school"
 
-- place: "Test Place 4"
-  time: "Summer 2019"
-  title: "Test Title 4"
-  subtitle: "Test Subtitle 4"
-  category: "work"
+- place: "FIT"
+  time: "Nov 2016"
+  title: "M.S., Aerospace Engineering"
+  subtitle: "<span class=\"timeline-link\">Florida Institute of Technology</span>; Thesis: A Maximum Entropy Approach to Identifying Important Statistical Moments to Best-Represent Spray Distribution Data"
+  category: "school"
 
-- place: "Test Place 5"
-  time: "Summer 2016"
-  title: "Test Title 5"
-  subtitle: "Test Subtitle 5"
-  category: "test"
-
-- place: "Test Place 6"
-  time: "Summer 2014"
-  title: "Test Title 6"
-  subtitle: "Test Subtitle 6"
-  category: "work"
-
-- place: "Test Place 7"
-  time: "Feb-Aug 2013"
-  title: "Test Title 7"
-  subtitle: "Test Subtitle 7"
-  category: "test"
-
-
-
+- place: "BUPT"
+  time: "May 2012"
+  title: "B.E., Mechanical and Automation"
+  subtitle: "<span class=\"timeline-link\">Central College of BUPT</span>; Beijing, China"
+  category: "school"
