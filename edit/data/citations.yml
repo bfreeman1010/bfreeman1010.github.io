@@ -1,0 +1,71 @@
+metadata:
+  last_updated: '2026-01-14'
+papers:
+  arn59b8AAAAJ:2osOgNQ5qMEC:
+    citations: 17
+    title: "Exploring topic modelling for generalising design requirements in complex design"
+    year: '2023'
+  arn59b8AAAAJ:9yKSN-GCB0IC:
+    citations: 20
+    title: "Reasoning support for predicting requirement change volatility using complex network metrics"
+    year: '2022'
+  arn59b8AAAAJ:IjCSPb-OGe4C:
+    citations: 28
+    title: "Enhancing manufacturing operations with synthetic data: a systematic framework for data generation, accuracy, and utility"
+    year: '2024'
+  arn59b8AAAAJ:Tyk-4Ss8FVUC:
+    citations: 7
+    title: "A Network Interference Approach to Analyzing Change Propagation in Requirements"
+    year: '2024'
+  arn59b8AAAAJ:UeHWp8X0CEIC:
+    citations: 10
+    title: "Bridging the knowledge gap between design requirements and cad-a joint embedding approach"
+    year: '2023'
+  arn59b8AAAAJ:W7OEmFMy1HYC:
+    citations: 3
+    title: "3d-model shapenet core classification using meta-semantic learning"
+    year: '2022'
+  arn59b8AAAAJ:WF5omc3nYNoC:
+    citations: 3
+    title: "Exploring Latent System Design Description and Requirement Similarities Using Transformer Based Contextual Embeddings"
+    year: '2024'
+  arn59b8AAAAJ:Y0pCki6q_DkC:
+    citations: 7
+    title: "Development of a Manufacturing Assessment Survey to Promote Entrepreneurial Mindset in Engineering"
+    year: '2023'
+  arn59b8AAAAJ:_FxGoFyzp5QC:
+    citations: 0
+    title: "A Maximum Entropy Approach to Identifying Important Statistical Moments to Best-Represent Spray Distribution Data"
+    year: '2016'
+  arn59b8AAAAJ:d1gkVwhDpl0C:
+    citations: 29
+    title: "Deep neural networks in natural language processing for classifying requirements by origin and functionality: An application of bert in system requirements"
+    year: '2024'
+  arn59b8AAAAJ:eQOLeE2rZwMC:
+    citations: 3
+    title: "Realization of inter-model connections: Linking requirements and computer-aided design"
+    year: '2022'
+  arn59b8AAAAJ:qjMakFHDy7sC:
+    citations: 13
+    title: "From text to images: Linking system requirements to images using joint embedding"
+    year: '2023'
+  arn59b8AAAAJ:roLk4NBRz8UC:
+    citations: 0
+    title: "AIM-E: AI-Driven Inspection for Manufacturing on the Edge"
+    year: '2025'
+  arn59b8AAAAJ:u-x6o8ySG0sC:
+    citations: 22
+    title: "A topic modeling approach to study design requirements"
+    year: '2021'
+  arn59b8AAAAJ:u5HHmVD_uO8C:
+    citations: 42
+    title: "Employing machine learning techniques to assess requirement change volatility"
+    year: '2021'
+  arn59b8AAAAJ:ufrVoPGSRksC:
+    citations: 4
+    title: "Advancing architectural frameworks for vibration signature classification in rotating machinery"
+    year: '2025'
+  arn59b8AAAAJ:zYLM7Y9cAGgC:
+    citations: 8
+    title: "The imminent educational paradigm shift: How artificial intelligence will reframe how we educate the next generation of engineering designers"
+    year: '2020'

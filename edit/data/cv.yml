@@ -1,0 +1,149 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Cheng Chen
+    - name: Email
+      value: Cheng.chen@uah.edu
+    - name: Phone
+      value: 321-305-1613
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Ph.D., Mechanical Engineering
+      institution: University of Georgia, Athens, GA
+      year: Jul 2022
+      description:
+        - "Dissertation: Realization of Inter-Model Connections: Linking Requirements and Computer-Aided Design"
+    - title: M.S., Aerospace Engineering
+      institution: Florida Institute of Technology, Melbourne, FL
+      year: Nov 2016
+      description:
+        - "Thesis: A Maximum Entropy Approach to Identifying Important Statistical Moments to Best-Represent Spray Distribution Data"
+    - title: B.E., Mechanical and Automation
+      institution: Central College of BUPT, Beijing, China
+      year: May 2012
+
+- title: Academic Experience
+  type: time_table
+  contents:
+    - title: Assistant Professor (Tenure Track)
+      institution: University of Alabama in Huntsville, Huntsville, AL
+      year: Aug 2024 - Present
+      description:
+        - Director, Integrated Computing Lab
+        - Co-director, Digital X Lab
+    - title: Postdoc and Instructor
+      institution: University of Georgia, Athens, GA
+      year: 2022 - 2024
+      description:
+        - "Supervisor: Dr. Jaime Camelio"
+    - title: Graduate Research Assistant
+      institution: University of Georgia, Athens, GA
+      year: Aug 2019 - Jul 2022
+      description:
+        - "Advisor: Dr. Beshoy Morkos"
+    - title: Research Assistant
+      institution: Florida Institute of Technology, Melbourne, FL
+      year: Aug 2018 - Aug 2019
+    - title: Graduate Student
+      institution: Florida Institute of Technology, Melbourne, FL
+      year: Aug 2013 - Dec 2016
+
+- title: Industrial Projects
+  type: time_table
+  contents:
+    - title: Wells Fargo Data Science Competition
+      institution: University of Georgia, Athens, GA
+      year: Mar 2021
+    - title: Alstom Mesh Network Exploration Project
+      institution: Florida Institute of Technology, Melbourne, FL
+      year: Sep 2018 - Mar 2019
+
+- title: Teaching Experience
+  type: list
+  contents:
+    - "UAH: ISE423/523 Intro Statistical Quality Control (S25)"
+    - "UAH: ISE726 System Modeling (S25)"
+    - "UAH: Honor 301 Large Language Models: Understanding, Ethics, and Impact (F25)"
+    - "UAH: ISE430/530 Manufacture System & Facilities Design (F24, F25)"
+    - "UGA: ENGR2120 Engineering Statics (F22)"
+    - "UGA: ENGR3140 Engineering Thermodynamics (S23, F23, S24)"
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - JCISE Reviewers of the Year Award
+        - UAH New Faculty Research Grant ($10,000)
+    - year: 2024
+      items:
+        - Provost's Affordable Course Materials Grants ($5,000)
+    - year: 2023
+      items:
+        - EETI Travel Fellowship ($3,125)
+    - year: 2022
+      items:
+        - EETI Travel Fellowship ($1,445)
+    - year: 2021
+      items:
+        - Honorable mention, Wells Fargo data science competition
+    - year: 2020
+      items:
+        - ASME CIE Design Poster Award
+    - year: 2012
+      items:
+        - Third-Class Scholarship for Outstanding Academic Performance, Central College of BUPT
+
+- title: Professional Associations
+  type: list
+  contents:
+    - Society of Manufacturing Engineers (2023 - Present)
+    - Alpha Alpha Alpha Honor Society (2022 - Present)
+    - The Design Research Society (2019 - Present)
+    - American Society of Engineering Education (2019 - Present)
+    - UGA Engineering Education Transformation Institute (2019 - Present)
+    - National Postdoctoral Association (2019 - Present)
+    - American Society of Mechanical Engineers (2018 - Present)
+    - National Center for Faculty Development and Diversity (2017 - Present)
+    - National Space Club Huntsville (2024 - Present)
+    - The American Institute of Aeronautics and Astronautics (2014 - 2015)
+
+- title: Skills and Qualifications
+  type: nested_list
+  contents:
+    - title: Modeling and Simulation Tools
+      items:
+        - AutoDesk AutoCAD
+        - AutoDesk Fusion 360
+        - AutoDesk Inventor
+        - SolidWorks
+        - MagicDraw
+        - Astah SysML
+        - MATLAB Simulink
+        - LaTeX
+    - title: Programming and Data
+      items:
+        - C/C++
+        - Python
+        - CUDA
+        - OpenCL
+        - HTML
+        - JavaScript
+        - RStudio
+        - NumPy
+        - Pandas
+        - Keras
+        - Scikit-learn
+        - PyTorch
+        - TensorFlow
+        - MPI
+        - OpenMP
+    - title: Platforms and Languages
+      items:
+        - Linux
+        - Heroku
+        - English
+        - Mandarin

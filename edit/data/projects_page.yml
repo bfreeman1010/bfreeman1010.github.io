@@ -1,0 +1,13 @@
+
+sections:
+  - id: research
+    title: research
+    body: >
+      I am part of the
+      [NSF Industry University Cooperative Research Center for Smart Manufacturing using AI-based Revolutionary Technologies (SMART)](https://smart.eng.ua.edu/).
+  - id: repositories
+    title: repositories
+    show_github_users: true
+    show_github_repos: true
+    github_users_title: GitHub users
+    github_repos_title: GitHub repositories

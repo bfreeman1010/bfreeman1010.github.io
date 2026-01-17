@@ -1,0 +1,33 @@
+"AJP":
+  url: https://aapt.scitation.org/journal/ajp
+  color: "#00369f"
+
+"PhysRev":
+  url: https://journals.aps.org/
+
+"Vision":
+  color: "#009f36"
+
+"Machine Learning":
+  color: "#0d6efd"
+
+"Requirements":
+  color: "#6f42c1"
+
+"Manufacturing":
+  color: "#198754"
+
+"Design":
+  color: "#fd7e14"
+
+"Thesis":
+  color: "#6c757d"
+
+"Education":
+  color: "#d63384"
+
+"Mechanical":
+  color: "#fd7e14"
+
+"Computer Vision":
+  color: "#198754"

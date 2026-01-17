@@ -1,0 +1,43 @@
+experiences:
+
+- place: "UAH"
+  time: "Aug 2024 - Present"
+  title: "Assistant Professor (Tenure Track)"
+  subtitle: "<span class=\"timeline-link\">University of Alabama in Huntsville</span>; Industrial & Systems Engineering and Engineering Management; Director, Integrated Computing Lab; Co-director, Digital X Lab"
+  category: "work"
+
+- place: "UGA"
+  time: "2022 - 2024"
+  title: "Postdoc and Instructor"
+  subtitle: "<span class=\"timeline-link\">University of Georgia</span>; College of Engineering; Supervisor: Dr. Jaime Camelio"
+  category: "work"
+
+- place: "UGA"
+  time: "Jul 2022"
+  title: "Ph.D., Mechanical Engineering"
+  subtitle: "<span class=\"timeline-link\">University of Georgia</span>; Dissertation: Realization of Inter-Model Connections: Linking Requirements and Computer-Aided Design"
+  category: "school"
+
+- place: "UGA"
+  time: "Aug 2019 - Jul 2022"
+  title: "Graduate Research Assistant"
+  subtitle: "<span class=\"timeline-link\">University of Georgia</span>; Advisor: Dr. Beshoy Morkos"
+  category: "work"
+
+- place: "FIT"
+  time: "Aug 2018 - Aug 2019"
+  title: "Research Assistant"
+  subtitle: "<span class=\"timeline-link\">Florida Institute of Technology</span>; Department of Mechanical and Aerospace Engineering"
+  category: "work"
+
+- place: "FIT"
+  time: "Nov 2016"
+  title: "M.S., Aerospace Engineering"
+  subtitle: "<span class=\"timeline-link\">Florida Institute of Technology</span>; Thesis: A Maximum Entropy Approach to Identifying Important Statistical Moments to Best-Represent Spray Distribution Data"
+  category: "school"
+
+- place: "BUPT"
+  time: "May 2012"
+  title: "B.E., Mechanical and Automation"
+  subtitle: "<span class=\"timeline-link\">Central College of BUPT</span>; Beijing, China"
+  category: "school"
