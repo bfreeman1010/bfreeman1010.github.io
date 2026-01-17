@@ -1,16 +1,43 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Research projects, center affiliations, and repositories.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 4
+display_categories: []
+show_projects: false
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
 <div class="projects">
+  {% for section in site.data.projects_page.sections %}
+  <a id="{{ section.id }}" href=".#{{ section.id }}">
+    <h2 class="category">{{ section.title }}</h2>
+  </a>
+  {% if section.body %}
+    {{ section.body | markdownify }}
+  {% endif %}
+  {% if section.show_github_users and site.data.repositories.github_users %}
+  <h3>{{ section.github_users_title }}</h3>
+  <ul class="repositories text-left">
+    {% for user in site.data.repositories.github_users %}
+      {% include repository/repo_user.liquid username=user %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if section.show_github_repos and site.data.repositories.github_repos %}
+  <h3>{{ section.github_repos_title }}</h3>
+  <ul class="repositories text-left">
+    {% for repo in site.data.repositories.github_repos %}
+      {% include repository/repo.liquid repository=repo %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endfor %}
+{% if page.show_projects %}
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
@@ -60,6 +87,7 @@ horizontal: false
       {% include projects.liquid %}
     {% endfor %}
   </div>
-  {% endif %}
+{% endif %}
+{% endif %}
 {% endif %}
 </div>

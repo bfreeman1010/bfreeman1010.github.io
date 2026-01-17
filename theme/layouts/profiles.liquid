@@ -1,0 +1,79 @@
+---
+layout: page
+---
+<div class="post">
+  <article>
+    {% if site.data.people.sections %}
+      {% for section in site.data.people.sections %}
+        <h2 class="category">{{ section.title }}</h2>
+        {% for profile in section.profiles %}
+          {% unless forloop.first %}<hr>{% endunless %}
+          <div class="people-entry">
+            <div class="people-card" style="display: flex; gap: 12px; align-items: flex-start;">
+              {% if profile.photo %}
+                <img src="{{ profile.photo }}" alt="{{ profile.name | default: 'Team member photo' }}" style="width: 170px; height: 170px; object-fit: cover; border-radius: 6px;">
+              {% endif %}
+              <div class="people-text" style="flex: 1;">
+                {% if profile.name %}
+                  <h3 style="margin: 0 0 6px 0;">{{ profile.name }}</h3>
+                {% endif %}
+                {% if profile.role %}
+                  <div style="font-weight: 600; margin-bottom: 8px;">{{ profile.role }}</div>
+                {% endif %}
+                {% if profile.bio %}
+                  <p style="margin: 0 0 8px 0;">{{ profile.bio }}</p>
+                {% endif %}
+                {% if profile.email %}
+                  <p style="margin: 0;">
+                    {% if profile.email %}
+                      <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>
+                    {% endif %}
+                  </p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    {% elsif page.grad_profiles or page.undergrad_profiles %}
+      {% if page.grad_profiles %}
+        <h2 class="people-section">Ph.D. and Master's Students</h2>
+        {% for profile in page.grad_profiles %}
+          {% unless forloop.first %}<hr>{% endunless %}
+          <div class="people-entry">
+            {% if profile.content %}
+              {% include_relative {{ profile.content }} %}
+            {% else %}
+              {{ content }}
+            {% endif %}
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if page.undergrad_profiles %}
+        <h2 class="people-section">Undergraduate Students</h2>
+        {% for profile in page.undergrad_profiles %}
+          {% unless forloop.first %}<hr>{% endunless %}
+          <div class="people-entry">
+            {% if profile.content %}
+              {% include_relative {{ profile.content }} %}
+            {% else %}
+              {{ content }}
+            {% endif %}
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% elsif page.profiles %}
+      {% for profile in page.profiles %}
+        {% unless forloop.first %}<hr>{% endunless %}
+        <div class="people-entry">
+          {% if profile.content %}
+            {% include_relative {{ profile.content }} %}
+          {% else %}
+            {{ content }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% endif %}
+  </article>
+</div>

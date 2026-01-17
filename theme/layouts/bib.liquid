@@ -1,6 +1,8 @@
 ---
 ---
-<div class="row">
+{% assign entry_badge = entry.abbr | default: '' %}
+{% assign entry_badge_slug = entry_badge | slugify %}
+<div class="row publication-entry" data-badge="{{ entry_badge_slug }}" data-badge-label="{{ entry_badge }}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}

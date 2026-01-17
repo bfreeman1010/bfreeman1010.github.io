@@ -13,6 +13,12 @@ experiences:
   category: "work"
 
 - place: "UGA"
+  time: "Jul 2022"
+  title: "Ph.D., Mechanical Engineering"
+  subtitle: "<span class=\"timeline-link\">University of Georgia</span>; Dissertation: Realization of Inter-Model Connections: Linking Requirements and Computer-Aided Design"
+  category: "school"
+
+- place: "UGA"
   time: "Aug 2019 - Jul 2022"
   title: "Graduate Research Assistant"
   subtitle: "<span class=\"timeline-link\">University of Georgia</span>; Advisor: Dr. Beshoy Morkos"
@@ -23,12 +29,6 @@ experiences:
   title: "Research Assistant"
   subtitle: "<span class=\"timeline-link\">Florida Institute of Technology</span>; Department of Mechanical and Aerospace Engineering"
   category: "work"
-
-- place: "UGA"
-  time: "Jul 2022"
-  title: "Ph.D., Mechanical Engineering"
-  subtitle: "<span class=\"timeline-link\">University of Georgia</span>; Dissertation: Realization of Inter-Model Connections: Linking Requirements and Computer-Aided Design"
-  category: "school"
 
 - place: "FIT"
   time: "Nov 2016"

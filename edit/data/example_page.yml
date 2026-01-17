@@ -1,0 +1,8 @@
+title: Example Research Page (YAML)
+sections:
+  - title: Research
+    body: >
+      This section is editable in YAML and can describe a research area or center.
+  - title: Repositories
+    body: >
+      List links or a short description of repositories here.

@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Courses taught and outreach activities.
+title: Teaching
+description: Courses taught.
 nav: true
-nav_order: 6
+nav_order: 3
 ---
 
 ### <span class="course-title">Hon 301: Large Language Models: Understanding, Ethics, and Impact</span>
@@ -69,8 +69,3 @@ Engineering-focused study of energy, energy transformations, and thermodynamic s
   - [Spring 2023](https://uga.view.usg.edu/d2l/home/2814859)
   - [Fall 2023](https://uga.view.usg.edu/d2l/home/2927569)
   - [Spring 2024](https://uga.view.usg.edu/d2l/home/3067449)
-
-## <span class="course-title">Outreach</span>
-
-- [GenCyber Summer Camp Website](https://sites.google.com/uah.edu/gencyber-2025-vi-camp/day-3/encryption-basics?authuser=0)
-- [UAH at a Glance](https://www.uah.edu/admissions/undergraduate/discover-uah/prospective-student-events)

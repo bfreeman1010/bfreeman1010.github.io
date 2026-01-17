@@ -1,12 +1,12 @@
 ---
 layout: default
-title: resume
+title: Career Timeline
 permalink: /resume/
 ---
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">resume</h1>
+    <h1 class="post-title">Career Timeline</h1>
   </header>
 
   <article>

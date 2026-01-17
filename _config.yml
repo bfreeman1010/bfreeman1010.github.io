@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Dr. Cheng
+first_name: Cheng 
 middle_name: 
-last_name: Chen
+last_name: Chen Ph.D.
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -49,7 +49,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 #Navbar logo
@@ -158,8 +158,8 @@ collections:
     defaults:
       layout: post
     output: true
-  #projects:
-  #  output: true
+  projects:
+    output: true
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -180,6 +180,10 @@ kramdown:
 
 # Includes & excludes
 include: ["_pages", "_scripts"]
+data_dir: edit/data
+includes_dir: theme/includes
+layouts_dir: theme/layouts
+sass_dir: _sass
 exclude:
   - bin/
   - CONTRIBUTING.md
@@ -203,8 +207,6 @@ exclude:
   # Remove Blog and Projects
   - _posts/
   - _pages/blog.md
-  - _projects/
-  - _pages/projects.md
   -
   
 keep_files:

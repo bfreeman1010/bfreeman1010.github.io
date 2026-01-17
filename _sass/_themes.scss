@@ -29,6 +29,10 @@
   --global-back-to-top-text-color: #{$white-color};
   --global-newsletter-bg-color: #{$white-color};
   --global-newsletter-text-color: #{$black-color};
+  --global-callout-bg-color: #e9f4f7;
+  --global-callout-border-color: #b6dfe7;
+  --global-callout-text-color: #0f3d45;
+  --global-callout-link-color: #0f5f6d;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -100,6 +104,10 @@ html[data-theme="dark"] {
   --global-back-to-top-text-color: #{$black-color};
   --global-newsletter-bg-color: #{$grey-color-light};
   --global-newsletter-text-color: #{$grey-color-dark};
+  --global-callout-bg-color: #0f2a32;
+  --global-callout-border-color: #1f4d59;
+  --global-callout-text-color: #cfeef6;
+  --global-callout-link-color: #7bd5e8;
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #215d42;

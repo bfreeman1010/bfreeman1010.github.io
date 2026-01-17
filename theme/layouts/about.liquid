@@ -52,14 +52,14 @@ layout: default
 
   <article>
     <h2 id="biography" class="section-title">
-      <a href="{{ '/biography/' | relative_url }}" style="color: inherit">biography</a>
+      <a href="{{ '/biography/' | relative_url }}" style="color: inherit">Biography</a>
     </h2>
     <div class="clearfix">{{ content }}</div>
 
     <!-- News -->
     {% if page.home_sections and page.home_sections.show_news and page.announcements and page.announcements.enabled %}
       <h2 class="section-title">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -67,16 +67,16 @@ layout: default
     {% if page.home_sections and page.home_sections.show_timeline %}
       <!-- ========== RESUME ========== -->
       <div class="docs-section" id="resume">
-        <h2 class="section-title">
-          <a href="{{ '/resume/' | relative_url }}" style="color: inherit">resume</a>
-        </h2>
+      <h2 class="section-title">
+        <a href="{{ '/resume/' | relative_url }}" style="color: inherit">Career Timeline</a>
+      </h2>
         {% include timeline.liquid %}
       </div>
     {% endif %}
 
     <div class="docs-section" id="acknowledgements">
       <h2 class="section-title">
-        <a href="#acknowledgements" style="color: inherit">acknowledgements</a>
+        <a href="#acknowledgements" style="color: inherit">Acknowledgements</a>
       </h2>
       <p>
         
@@ -95,7 +95,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2 class="section-title">
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -103,7 +103,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2 class="section-title">
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

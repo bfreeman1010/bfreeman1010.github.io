@@ -1,0 +1,25 @@
+sections:
+  - title: Ph.D. and Master's Students
+    profiles:
+      - name: Full Name
+        role: Role / Title
+        photo: /assets/img/placeholder_logo.jpg
+        bio: Short bio goes here. Replace with the member's background, research interests, and current focus.
+        email: email@uah.edu
+      - name: Full Name
+        role: Role / Title
+        photo: /assets/img/placeholder_logo.jpg
+        bio: Short bio goes here. Replace with the member's background, research interests, and current focus.
+        email: email@uah.edu
+  - title: Undergraduate Students
+    profiles:
+      - name: Full Name
+        role: Role / Title
+        photo: /assets/img/placeholder_logo.jpg
+        bio: Short bio goes here. Replace with the member's background, research interests, and current focus.
+        email: email@uah.edu
+      - name: Full Name
+        role: Role / Title
+        photo: /assets/img/placeholder_logo.jpg
+        bio: Short bio goes here. Replace with the member's background, research interests, and current focus.
+        email: email@uah.edu

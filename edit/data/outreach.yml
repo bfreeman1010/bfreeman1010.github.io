@@ -1,0 +1,33 @@
+outreach:
+  - title: "UAH at a Glance"
+    url: "https://www.uah.edu/admissions/undergraduate/discover-uah/prospective-student-events"
+    image_folder: "assets/img/uah at a glance"
+    images:
+      - file: "DSC_0005.jpg"
+        alt: "UAH at a Glance"
+        description: "Digital X Lab"
+        width: 300
+        height: 600
+      - file: "DSC_0013.jpg"
+        alt: "UAH at a Glance event"
+        description: "Smart Working Bench"
+        width: 900
+        height: 300
+      
+      
+      
+  - title: "GenCyber Summer Camp"
+    url: "https://sites.google.com/uah.edu/gencyber-2025-vi-camp/day-3/encryption-basics?authuser=0"
+    images:
+      - path: "assets/img/Gencyber.png"
+        alt: "GenCyber Summer Camp"
+        description: "GenCyber Summer Camp"
+        width: 150
+        height: 100
+        no_border: true
+      - path: "assets/img/aldb.png"
+        alt: "ALDB"
+        description: "ALDB"
+        width: 200
+        height: 70
+        no_border: true

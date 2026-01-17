@@ -1,0 +1,29 @@
+description: An interdisciplinary lab focused on AI, design, and manufacturing systems.
+sections:
+  - title: Who We Are
+    body: >
+      We are a diverse, international, and collaborative team of researchers in the
+      [Department of Industrial and Systems Engineering and Engineering Management (ISEEM)](https://www.uah.edu/eng/departments/iseem)
+      at the University of Alabama in Huntsville. We believe that science is a team sport, and we
+      support one another in thriving both within and beyond academia through formal and informal
+      mentorship. Our shared goal is to create and share globally relevant knowledge in design and
+      manufacturing - fields that deeply fascinate us - while inspiring similar enthusiasm in
+      students, collaborators, and the public. We strive to build AI-driven systems to address
+      complex challenges in design and systems science. Positivity, balance, respect, passion,
+      curiosity, integrity, and inclusiveness define our lab culture. Above all, we pursue design,
+      systems, and manufacturing research with a commitment to equity, ethical practice, and
+      genuine partnership with our communities.
+  - title: What We Do
+    body: >
+      We are driven by the belief that intelligent, trustworthy, and transparent computational tools
+      can empower engineers to design safer, more sustainable, and more resilient systems. In the
+      Integrated Computing Lab (ICL), we study how machine learning models can understand and capture
+      complex behaviors in physical and engineering systems. To do this, we design hybrid model
+      architectures that couple data-driven networks with simulation-based physics, enabling the
+      development of trustworthy digital artifacts for aerospace, manufacturing, and energy systems.
+  - title: Questions We Ask
+    body: >
+      How can we integrate physics-based and data-driven models to improve manufacturing processes,
+      decision-making, and trade-off analysis? What are the most effective model architectures and
+      mathematical representations for capturing complex systems and addressing ill-defined design
+      challenges?

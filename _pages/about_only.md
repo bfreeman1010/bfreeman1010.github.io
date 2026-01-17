@@ -1,6 +1,6 @@
 ---
 layout: page
-title: biography
+title: Biography
 permalink: /biography/
 description: 
 nav: false
