@@ -1,8 +1,8 @@
 ---
 layout: profiles
 permalink: /people/
-title: People
-description: members of the lab or group
+title: Mission Statement
+description: mission statement for the lab
 nav: true
 nav_order: 8
 ---

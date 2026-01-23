@@ -1,28 +1,39 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract, award, bibtex, and mla buttons
+  // add toggle functionality to abstract, award, bibtex, mla, and video buttons
   $("a.abstract").click(function () {
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".mla.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
   });
   $("a.award").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".mla.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
   });
   $("a.bibtex").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
     $(this).parent().parent().find(".mla.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
   });
   $("a.mla").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".mla.hidden").toggleClass("open");
+    $(this).parent().parent().find(".video.hidden.open").toggleClass("open");
+  });
+  $("a.video").click(function () {
+    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".mla.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".video.hidden").toggleClass("open");
   });
   $("a").removeClass("waves-effect waves-light");
 

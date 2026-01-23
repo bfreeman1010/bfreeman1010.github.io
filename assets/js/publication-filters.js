@@ -25,10 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  const tabList = document.createElement("ul");
+  tabList.className = "tab-nav";
+  filterBar.appendChild(tabList);
+
   const createButton = (label, filter, isActive = false) => {
+    const listItem = document.createElement("li");
     const button = document.createElement("button");
     button.type = "button";
-    button.className = "badge-filter";
+    button.className = "button badge-filter";
     if (isActive) {
       button.classList.add("active");
       button.setAttribute("aria-pressed", "true");
@@ -37,16 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     button.dataset.filter = filter;
     button.textContent = label;
-    return button;
+    listItem.appendChild(button);
+    return listItem;
   };
 
-  const allowedLabels = new Set(["Education", "Manufacturing", "Requirements"]);
+  const orderedLabels = ["Computational Design", "Manufacturing", "Education"];
   const sortedBadges = Array.from(badges.entries())
-    .filter((entry) => allowedLabels.has(entry[1]))
-    .sort((a, b) => a[1].localeCompare(b[1]));
-  filterBar.appendChild(createButton("All", "all", true));
+    .filter((entry) => orderedLabels.includes(entry[1]))
+    .sort((a, b) => orderedLabels.indexOf(a[1]) - orderedLabels.indexOf(b[1]));
+  tabList.appendChild(createButton("All", "all", true));
   sortedBadges.forEach(([slug, label]) => {
-    filterBar.appendChild(createButton(label, slug));
+    tabList.appendChild(createButton(label, slug));
   });
 
   const setActive = (activeButton) => {
@@ -60,35 +66,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const isHidden = (item) => item.classList.contains("filtered-out") || item.classList.contains("unloaded");
 
   const updateGroupedVisibility = () => {
-    document.querySelectorAll("h2.bibliography").forEach((heading) => {
-      heading.classList.remove("filtered-out");
-      let iterator = heading.nextElementSibling;
-      let hideHeading = true;
-
-      while (iterator && iterator.tagName !== "H2") {
-        if (iterator.tagName === "OL") {
-          const ol = iterator;
-          const items = Array.from(ol.querySelectorAll(":scope > li"));
-          const allHidden = items.length > 0 && items.every((item) => isHidden(item));
-
-          if (allHidden) {
-            ol.classList.add("filtered-out");
-            if (ol.previousElementSibling) {
-              ol.previousElementSibling.classList.add("filtered-out");
-            }
-          } else {
-            hideHeading = false;
-            ol.classList.remove("filtered-out");
-            if (ol.previousElementSibling) {
-              ol.previousElementSibling.classList.remove("filtered-out");
-            }
-          }
+    document.querySelectorAll("ol.bibliography").forEach((ol) => {
+      const items = Array.from(ol.querySelectorAll(":scope > li"));
+      const allHidden = items.length > 0 && items.every((item) => isHidden(item));
+      const previous = ol.previousElementSibling;
+      const toggleHeading = (element, shouldHide) => {
+        if (element) {
+          element.classList.toggle("filtered-out", shouldHide);
         }
-        iterator = iterator.nextElementSibling;
-      }
+      };
 
-      if (hideHeading) {
-        heading.classList.add("filtered-out");
+      if (allHidden) {
+        ol.classList.add("filtered-out");
+        toggleHeading(previous, true);
+      } else {
+        ol.classList.remove("filtered-out");
+        toggleHeading(previous, false);
       }
     });
   };

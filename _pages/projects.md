@@ -3,7 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 description: Research projects, center affiliations, and repositories.
-nav: true
+nav: false
 nav_order: 4
 display_categories: []
 show_projects: false

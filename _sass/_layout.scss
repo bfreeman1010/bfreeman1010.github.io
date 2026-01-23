@@ -55,36 +55,50 @@ body.sticky-bottom-footer {
  ******************************************************************************/
 
 .publication-badge-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
   margin: 0 0 1rem;
 }
 
-.publication-badge-filters .badge-filter {
-  border: 1px solid var(--global-theme-color);
-  background-color: var(--global-bg-color);
-  color: var(--global-text-color);
-  border-radius: 6px;
-  font-size: 0.85rem;
-  line-height: 1.2;
-  padding: 0.25rem 0.7rem;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+.publication-badge-filters .tab-nav {
+  list-style: none;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-left: 5px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
-.publication-badge-filters .badge-filter:hover,
-.publication-badge-filters .badge-filter:focus-visible {
+.publication-badge-filters .tab-nav li {
+  display: inline-block;
+}
+
+.publication-badge-filters .tab-nav .button {
+  font-size: 0.85rem;
+  font-weight: normal;
+  border: 1px solid var(--global-divider-color);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  line-height: 1.2;
+  padding: 0.35rem 0.85rem;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.publication-badge-filters .tab-nav .button:hover,
+.publication-badge-filters .tab-nav .button:focus-visible {
   background-color: var(--global-hover-color);
   border-color: var(--global-hover-color);
   color: var(--global-hover-text-color);
   box-shadow: none;
 }
 
-.publication-badge-filters .badge-filter.active {
-  background-color: var(--global-theme-color);
-  border-color: var(--global-theme-color);
-  color: var(--global-hover-text-color);
-  box-shadow: none;
+.publication-badge-filters .tab-nav .button.active {
+  border-bottom: 1px solid var(--global-bg-color);
+  color: var(--global-text-color);
+  font-weight: normal;
 }
 
 .publications .abbr .badge {
@@ -110,8 +124,8 @@ body.sticky-bottom-footer {
   color: inherit;
 }
 
-html[data-theme="dark"] .publication-badge-filters .badge-filter {
-  border-color: var(--global-theme-color);
+html[data-theme="dark"] .publication-badge-filters .tab-nav .button {
+  border-color: var(--global-divider-color);
 }
 
 html[data-theme="dark"] .publications .abbr .badge {
@@ -122,44 +136,42 @@ html[data-theme="dark"] .publications .abbr .badge {
   display: none !important;
 }
 
-.outreach-item {
+.service-item {
   margin: 2rem 0;
   text-align: left;
 }
 
 
-.outreach-title a {
+.service-title a {
   color: inherit;
   text-decoration: none;
 }
 
-.outreach-title a:hover,
-.outreach-title a:focus-visible {
+.service-title a:hover,
+.service-title a:focus-visible {
   color: var(--global-theme-color);
 }
 
-.outreach-images {
-  display: grid;
+.service-images {
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  grid-template-columns: 1fr;
   align-items: start;
-  justify-items: start;
 }
 
-.outreach-images figure {
+.service-images figure {
   margin: 0;
   width: auto;
 }
 
-.outreach-image {
+.service-image {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   min-width: 0;
-  width: 100%;
 }
 
-.outreach-images img {
+.service-images img {
   display: block;
   height: auto;
   border-radius: 12px;
@@ -167,27 +179,69 @@ html[data-theme="dark"] .publications .abbr .badge {
   background: var(--global-bg-color);
   max-width: 100%;
   width: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.outreach-images img.no-outline {
+.service-images img:hover {
+  transform: scale(1.02);
+}
+
+.service-images img.no-outline {
   border: none;
 }
 
 
-.outreach-image-text {
+.service-image-text {
   margin-top: 6px;
   font-size: 0.85rem;
   color: var(--global-text-color-light);
 }
 
-.outreach-item h2.category a {
+.service-item h2.category a {
   color: var(--global-divider-color);
   text-decoration: none;
 }
 
-.outreach-item h2.category a:hover,
-.outreach-item h2.category a:focus-visible {
+.service-item h2.category a:hover,
+.service-item h2.category a:focus-visible {
   color: var(--global-theme-color);
+}
+
+/* Research Horizons Posters specific styling */
+.research-horizons-posters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.research-horizons-posters .service-image {
+  text-align: center;
+}
+
+.poster-link {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.poster-link:hover {
+  transform: scale(1.05);
+}
+
+.poster-thumbnail {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.poster-thumbnail:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .poster-thumbnail:hover {
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
 .repositories {

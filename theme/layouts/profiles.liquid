@@ -3,6 +3,12 @@ layout: page
 ---
 <div class="post">
   <article>
+    {% if page.permalink == "/people/" and site.data.icl.sections %}
+      {% for section in site.data.icl.sections %}
+        <h2 class="icl-section-title">{{ section.title }}</h2>
+        {{ section.body | markdownify }}
+      {% endfor %}
+    {% endif %}
     {% if site.data.people.sections %}
       {% for section in site.data.people.sections %}
         <h2 class="category">{{ section.title }}</h2>

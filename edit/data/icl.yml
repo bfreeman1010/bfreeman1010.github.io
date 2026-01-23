@@ -21,8 +21,6 @@ sections:
       complex behaviors in physical and engineering systems. To do this, we design hybrid model
       architectures that couple data-driven networks with simulation-based physics, enabling the
       development of trustworthy digital artifacts for aerospace, manufacturing, and energy systems.
-  - title: Questions We Ask
-    body: >
       How can we integrate physics-based and data-driven models to improve manufacturing processes,
       decision-making, and trade-off analysis? What are the most effective model architectures and
       mathematical representations for capturing complex systems and addressing ill-defined design
