@@ -48,13 +48,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "Research projects, center affiliations, and repositories.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "Academic and professional highlights, appointments, teaching, awards, and skills.",
@@ -62,19 +55,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-integrated-computing-lab",
-          title: "Integrated Computing Lab",
-          description: "An interdisciplinary lab focused on AI, design, and manufacturing systems.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/integrated-computing-lab/";
-          },
-        },{id: "nav-people",
-          title: "People",
-          description: "members of the lab or group",
+        },{id: "nav-mission-statement",
+          title: "Mission Statement",
+          description: "mission statement for the lab",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
+          },
+        },{id: "nav-service",
+          title: "Service",
+          description: "Service activities and highlights.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/service/";
           },
         },{
         id: 'social-cv',

@@ -6,7 +6,7 @@ This repo uses a custom layout so content edits are separated from templates/sty
 - Pages live in `_pages/`.
 - Page data lives in `edit/data/`.
   - `edit/data/people.yml` for the People page.
-  - `edit/data/outreach.yml` for Outreach items/images.
+  - `edit/data/service.yml` for Service activities/images.
   - `edit/data/projects_page.yml` for Projects sections.
   - `edit/data/icl.yml` for Integrated Computing Lab sections.
   - `edit/data/repositories.yml` for GitHub user/repo lists.
@@ -33,7 +33,7 @@ nav_order: 11
 ## Adding images
 - Store images in `assets/img/`.
 - Reference them as `/assets/img/your-image.png` in pages or YAML.
-- For Outreach images, add entries in `edit/data/outreach.yml`.
+- For Service images, add entries in `edit/data/service.yml`.
 
 ## Custom CSS
 - Add or change styles in `_sass/_base.scss` or `_sass/_layout.scss`.

@@ -1,0 +1,157 @@
+service:
+  - title: "UAH at a Glance"
+    url: "https://www.uah.edu/admissions/undergraduate/discover-uah/prospective-student-events"
+    image_folder: "assets/img/uah at a glance"
+    images:
+      - file: "DSC_0005.jpg"
+        alt: "UAH at a Glance"
+        description: "Digital X Lab"
+        width: 300
+        height: 300
+      - file: "DSC_0013.jpg"
+        alt: "UAH at a Glance event"
+        description: "Smart Working Bench"
+        width: 900
+        height: 300
+      # TEST DATA - Remove after stress testing
+      # - file: "DSC_0005.jpg"
+      #   alt: "Test 3"
+      #   description: "Test Image 3"
+      #   width: 250
+      #   height: 400
+      # - file: "DSC_0013.jpg"
+      #   alt: "Test 4"
+      #   description: "Test Image 4"
+      #   width: 400
+      #   height: 250
+      # - file: "DSC_0005.jpg"
+      #   alt: "Test 5"
+      #   description: "Test Image 5"
+      #   width: 300
+      #   height: 350
+
+
+
+  - title: "GenCyber Summer Camp"
+    url: "https://sites.google.com/uah.edu/gencyber-2025-vi-camp/day-3/encryption-basics?authuser=0"
+    images:
+      - path: "assets/img/Gencyber.png"
+        alt: "GenCyber Summer Camp"
+        description: "GenCyber Summer Camp"
+        width: 150
+        height: 100
+        no_border: true
+      - path: "assets/img/aldb.png"
+        alt: "ALDB"
+        description: "ALDB"
+        width: 200
+        height: 70
+        no_border: true
+      # TEST DATA - Remove after stress testing
+      # - path: "assets/img/Gencyber.png"
+      #   alt: "Test Logo 3"
+      #   description: "Test Logo 3"
+      #   width: 180
+      #   height: 120
+      #   no_border: true
+      # - path: "assets/img/aldb.png"
+      #   alt: "Test Logo 4"
+      #   description: "Test Logo 4"
+      #   width: 220
+      #   height: 80
+      #   no_border: true
+      # - path: "assets/img/Gencyber.png"
+      #   alt: "Test Logo 5"
+      #   description: "Test Logo 5"
+      #   width: 160
+      #   height: 110
+      #   no_border: true
+      # - path: "assets/img/aldb.png"
+      #   alt: "Test Logo 6"
+      #   description: "Test Logo 6"
+      #   width: 190
+      #   height: 75
+      #   no_border: true
+
+  # TEST DATA - Remove after stress testing
+  # - title: "STEM Outreach Workshop"
+  #   url: "https://example.com/stem-workshop"
+  #   images:
+  #     - path: "assets/img/Gencyber.png"
+  #       alt: "STEM Workshop 1"
+  #       description: "Workshop Session 1"
+  #       width: 200
+  #       height: 150
+  #       no_border: false
+  #     - path: "assets/img/aldb.png"
+  #       alt: "STEM Workshop 2"
+  #       description: "Workshop Session 2"
+  #       width: 200
+  #       height: 150
+  #       no_border: false
+  #     - path: "assets/img/Gencyber.png"
+  #       alt: "STEM Workshop 3"
+  #       description: "Workshop Session 3"
+  #       width: 200
+  #       height: 150
+  #       no_border: false
+  #     - path: "assets/img/aldb.png"
+  #       alt: "STEM Workshop 4"
+  #       description: "Workshop Session 4"
+  #       width: 200
+  #       height: 150
+  #       no_border: false
+
+# Research Horizons Posters
+# To add a new poster,  add a new entry to this list with the following fields:
+# - title: The title of the poster
+# - authors: The authors of the poster
+# - date: The date of the poster presentation
+# - image: Path to the poster image (PNG/JPG) - stored in assets/img/research_horizons/
+# - pdf_url: (Optional) External URL to download the PDF version
+# - url: (Optional) URL to the Research Horizons page
+research_horizons:
+  - title: "AIM-E - AI Driven Inspection for Manufacturing on the Edge"
+    authors: "William Boone, Paul Johns and Dr. Cheng Chen"
+    date: "March 6, 2025"
+    image: "assets/img/research_horizons/AIM-E - AI Driven Inspection for Manufacturing on the Edge_page-0001.jpg"
+    pdf_url: "https://louis.uah.edu/cgi/viewcontent.cgi?article=1382&context=research-horizons"
+    url: "https://louis.uah.edu/research-horizons/383/"
+  
+    
+
+  # TEST DATA - Remove  after stress testing
+  # - title: "Machine Learning Applications in Manufacturing"
+  #   authors: "Jane Smith and Robert Johnson"
+  #   date: "February 15, 2025"
+  #   image: "assets/img/publication_preview/Development of Manufacturing Assessment.jpg"
+  #   pdf_url: "https://example.com/test-pdf-1"
+  #   url: "https://louis.uah.edu/research-horizons/999/"
+
+  # - title: "Synthetic Data Generation for Quality Control"
+  #   authors: "Emily Davis and Michael Brown"
+  #   date: "January 20, 2025"
+  #   image: "assets/img/publication_preview/Enhancing Manufacturing Operations with Synthetic Data.jpg"
+  #   pdf_url: "https://example.com/test-pdf-2"
+  #   url: "https://louis.uah.edu/research-horizons/998/"
+
+  # - title: "Deep Learning in Natural Language Processing"
+  #   authors: "Sarah Wilson and David Martinez"
+  #   date: "December 10, 2024"
+  #   image: "assets/img/publication_preview/Deep Neural Networks in Natural Language Processing.jpg"
+  #   pdf_url: "https://example.com/test-pdf-3"
+  #   url: "https://louis.uah.edu/research-horizons/997/"
+
+  # - title: "Meta-Selection Framework for AI Models"
+  #   authors: "Thomas Anderson and Lisa Taylor"
+  #   date: "November 5, 2024"
+  #   image: "assets/img/publication_preview/Meta-Sel-framework_W640.jpg"
+  #   pdf_url: "https://example.com/test-pdf-4"
+  #   url: "https://louis.uah.edu/research-horizons/996/"
+
+  # - title: "Topic Modeling for Design Requirements"
+  #   authors: "Christopher Lee and Amanda White"
+  #   date: "October 18, 2024"
+  #   image: "assets/img/publication_preview/Exploring Topic Modelling for Generalising Design.jpg"
+  #   pdf_url: "https://example.com/test-pdf-5"
+  #   url: "https://louis.uah.edu/research-horizons/995/"
