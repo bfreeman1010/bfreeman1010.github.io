@@ -76,13 +76,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "nav-outreach",
-          title: "Outreach",
-          description: "Outreach activities and highlights.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/outreach/";
-          },
         },{
         id: 'social-cv',
         title: 'CV',
