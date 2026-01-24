@@ -24,15 +24,7 @@ nav_order: 9
             {% include figure.liquid path=poster.image class="rounded poster-thumbnail" alt=poster.title zoomable=true %}
           {% endif %}
           <div class="service-image-text">
-            <strong>{{ poster.title }}</strong>
-            {% if poster.authors %}<br>{{ poster.authors }}{% endif %}
-            {% if poster.date %}<br>{{ poster.date }}{% endif %}
-            {% if poster.pdf_url %}
-              <br><a href="{{ poster.pdf_url }}" target="_blank" rel="noopener">Download PDF</a>
-            {% endif %}
-            {% if poster.url %}
-              <br><a href="{{ poster.url }}" target="_blank" rel="noopener">View Details</a>
-            {% endif %}
+            <strong>{% if poster.url %}<a href="{{ poster.url }}" target="_blank" rel="noopener">{{ poster.title }}</a>{% else %}{{ poster.title }}{% endif %}</strong>
           </div>
         </div>
       {% endfor %}

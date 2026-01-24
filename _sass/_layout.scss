@@ -196,10 +196,20 @@ html[data-theme="dark"] .publications .abbr .badge {
   margin-top: 6px;
   font-size: 0.85rem;
   color: var(--global-text-color-light);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--global-theme-color);
+    }
+  }
 }
 
 .service-item h2.category a {
-  color: var(--global-divider-color);
+  color: var(--global-text-color-light);
   text-decoration: none;
 }
 
