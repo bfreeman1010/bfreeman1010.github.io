@@ -401,15 +401,15 @@ ul.task-list input[type="checkbox"] {
 
 .post.post-about {
   .section-title {
-    border-top: 1px solid var(--global-divider-color);
+    border-top: 1px solid var(--global-text-color);
     padding-top: 2rem;
     margin-top: 2.5rem;
   }
 }
 
 .icl-section-title {
-  color: var(--global-text-color-light);
-  border-bottom: 1px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  border-bottom: 1px solid var(--global-text-color);
   padding-top: 0.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -789,7 +789,7 @@ footer.sticky-bottom {
 // Blog
 
 .header-bar {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-text-color);
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -801,7 +801,7 @@ footer.sticky-bottom {
 }
 
 .tag-category-list {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-text-color);
   text-align: center;
   padding-top: 1rem;
 
@@ -831,7 +831,7 @@ footer.sticky-bottom {
   padding: 0;
 
   li {
-    border-bottom: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-text-color);
     list-style: none;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -931,8 +931,8 @@ footer.sticky-bottom {
   }
 
   h2.category {
-    color: var(--global-text-color-light);
-    border-bottom: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
+    border-bottom: 1px solid var(--global-text-color);
     padding-top: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -942,8 +942,8 @@ footer.sticky-bottom {
 }
 
 h2.category {
-  color: var(--global-text-color-light);
-  border-bottom: 1px solid var(--global-divider-color);
+  color: var(--global-text-color);
+  border-bottom: 1px solid var(--global-text-color);
   padding-top: 0.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -994,8 +994,8 @@ h2.category {
   }
 
   h2.bibliography {
-    color: var(--global-text-color-light);
-    border-top: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
+    border-top: 1px solid var(--global-text-color);
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
