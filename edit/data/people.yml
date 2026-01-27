@@ -4,7 +4,7 @@ sections:
       - name: Full Name
         role: Role / Title
         photo: /assets/img/placeholder_logo.jpg
-        bio: Short bio goes here. Replace with the member's background, research interests, and current focus.
+        bio: This is a much longer bio to test how the layout handles extended text content. This researcher focuses on machine learning applications in manufacturing systems, with particular emphasis on computer vision for quality control and defect detection. Their work spans multiple domains including aerospace manufacturing, automotive assembly lines, and semiconductor fabrication. They have published numerous papers in top-tier journals and conferences, and have collaborated with industry partners on several funded research projects. Prior to joining the lab, they completed their undergraduate degree in mechanical engineering and worked as a systems engineer for three years. Their current research interests include deep learning architectures for time-series analysis, physics-informed neural networks, and the integration of simulation-based methods with data-driven approaches for predictive maintenance and process optimization.
         email: email@uah.edu
       - name: Full Name
         role: Role / Title

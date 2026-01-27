@@ -12,7 +12,7 @@ ninja.data = [{
   },
   {
     id: "nav-biography",
-    title: "biography",
+    title: "Biography",
     description: "Biography page",
     section: "Navigation",
     handler: () => {
@@ -21,7 +21,7 @@ ninja.data = [{
   },
   {
     id: "nav-acknowledgements",
-    title: "acknowledgements",
+    title: "Acknowledgements",
     description: "Acknowledgements section",
     section: "Navigation",
     handler: () => {
@@ -29,7 +29,7 @@ ninja.data = [{
     },
   },{
     id: "nav-resume",
-    title: "resume",
+    title: "Resume",
     section: "Navigation",
     handler: () => {
       window.location.href = "/resume/";
@@ -43,28 +43,28 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Courses taught.",
+          description: "courses taught.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Academic and professional highlights, appointments, teaching, awards, and skills.",
+          description: "academic and professional highlights, appointments, teaching, awards, and skills.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "nav-mission-statement",
           title: "Mission Statement",
-          description: "mission statement for the lab",
+          description: "mission statement for the lab.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/people/";
+            window.location.href = "/mission-statement/";
           },
         },{id: "nav-service",
           title: "Service",
-          description: "Service activities and highlights.",
+          description: "service activities and highlights.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/service/";
@@ -74,56 +74,56 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/Cheng%20Chen%20CV.pdf", "_blank");
+          window.location.href = "/assets/pdf/Cheng%20Chen%20CV.pdf";
         },
       },{
         id: 'social-email',
-        title: 'email',
+        title: 'Email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%63%63%31%31%31%35@%75%61%68.%65%64%75", "_blank");
+          window.location.href = "/";
         },
       },{
         id: 'social-facebook',
         title: 'Facebook',
         section: 'Socials',
         handler: () => {
-          window.open("https://facebook.com/profile.php?id=61556386295829", "_blank");
+          window.location.href = "https://facebook.com/profile.php?id=61556386295829";
         },
       },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/ChengC2019", "_blank");
+          window.location.href = "https://github.com/ChengC2019";
         },
       },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/cheng-chen-1223b583", "_blank");
+          window.location.href = "https://www.linkedin.com/in/cheng-chen-1223b583";
         },
       },{
         id: 'social-orcid',
         title: 'ORCID',
         section: 'Socials',
         handler: () => {
-          window.open("https://orcid.org/0000-0001-9017-9195", "_blank");
+          window.location.href = "https://orcid.org/0000-0001-9017-9195";
         },
       },{
         id: 'social-researchgate',
         title: 'ResearchGate',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.researchgate.net/profile/Cheng_Chen186/", "_blank");
+          window.location.href = "https://www.researchgate.net/profile/Cheng_Chen186/";
         },
       },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=arn59b8AAAAJ", "_blank");
+          window.location.href = "https://scholar.google.com/citations?user=arn59b8AAAAJ";
         },
       },{
       id: 'light-theme',

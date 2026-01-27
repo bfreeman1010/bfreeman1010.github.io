@@ -1,5 +1,3 @@
-How to Make a New Page
-
 1) Create a new page file in `_pages/`
 Example: `_pages/my-new-page.md`
 

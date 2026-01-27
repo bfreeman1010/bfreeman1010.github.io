@@ -1,8 +1,98 @@
 title: Example Research Page (YAML)
+intro: >
+  This page is driven by YAML data in `edit/data/example_page.yml` and rendered by `_pages/example-yaml.md`.
 sections:
-  - title: Research
+  - title: Section Title + Body
+    title_link: /example-yaml/
     body: >
-      This section is editable in YAML and can describe a research area or center.
-  - title: Repositories
+      Use `title` for the section heading and `body` for text. The body supports **Markdown**,
+      so you can include emphasis, lists, and inline code.
+    note: >
+      To make the title a link, set `title_link` in YAML. The hover color is controlled by
+      the theme CSS (matching the Service page style), which uses the theme link color on hover.
+  - title: Hyperlinks
     body: >
-      List links or a short description of repositories here.
+      Add links as an array and render them as a list.
+    links:
+      - label: Integrated Computing Lab
+        url: https://bfreeman1010.github.io/
+      - label: Google Scholar
+        url: https://scholar.google.com/
+  - title: Images (Zoom Enabled)
+    body: >
+      These images use `zoom: true` so they open with the zoom effect.
+    images:
+      - path: /assets/img/1.jpg
+        caption: "Zoomable image example (1.jpg)"
+        zoom: true
+        text_after: "This is an example sentence between images to show spacing and flow."
+      - path: /assets/img/2.jpg
+        caption: "Zoomable image example (2.jpg)"
+        zoom: true
+  - title: Images (No Zoom)
+    body: >
+      These images omit zoom, so they stay static.
+    images:
+      - path: /assets/img/3.jpg
+        caption: "Static image example (3.jpg)"
+        zoom: false
+        text_after: "Another paragraph between photos to demonstrate layout behavior."
+      - path: /assets/img/4.jpg
+        caption: "Static image example (4.jpg)"
+        zoom: false
+  - title: Image Locations + Paths
+    body: >
+      Store image files in `assets/img/`. Reference them in YAML as `/assets/img/your-file.jpg`.
+  - title: Image Sizes (Fixed, Max-Width, Percentage)
+    body: >
+      You can control image size with `width`, `height`, or `max_width`. These examples show
+      fixed pixel sizes and a max width constraint.
+    images:
+      - path: /assets/img/5.jpg
+        caption: "Fixed width/height (300x200)"
+        zoom: false
+        width: "300px"
+        height: "200px"
+      - path: /assets/img/6.jpg
+        caption: "Max width constraint (max 400px)"
+        zoom: false
+        max_width: "400px"
+  - title: Text Wrap (Left / Right / Center)
+    body: >
+      These examples show how to wrap text around images by floating them left or right.
+      Centered images do not wrap; they sit above the text.
+    wrap_images:
+      - path: /assets/img/7.jpg
+        caption: "Float left with text wrap"
+        zoom: false
+        wrap: left
+        width: "220px"
+        text: >
+          This text wraps around the image floated to the left. Use `wrap: left` and a fixed
+          `width` to control the layout.
+      - path: /assets/img/8.jpg
+        caption: "Float right with text wrap"
+        zoom: false
+        wrap: right
+        width: "220px"
+        text: >
+          This text wraps around the image floated to the right. Use `wrap: right` and a fixed
+          `width` to control the layout.
+      - path: /assets/img/9.jpg
+        caption: "Centered image (no wrap)"
+        zoom: false
+        wrap: center
+        width: "260px"
+        text: >
+          Centered images do not wrap text. Use `wrap: center` to keep the image centered with
+          the text below it.
+  - title: Left-Aligned Section Title
+    title_class: icl-section-title
+    body: >
+      This section uses the `icl-section-title` class (same as the Mission Statement page).
+      Set `title_class: icl-section-title` in YAML to get a left-aligned title with an underline.
+  - title: Left-Aligned Title (No Underline)
+    title_class: section-title-no-line
+    body: >
+      Use `title_class: section-title-no-line` to keep the title left-aligned without the
+      underline, while still using theme text colors.
