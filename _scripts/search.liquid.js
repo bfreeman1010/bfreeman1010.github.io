@@ -22,7 +22,7 @@ ninja.data = [
   },
   {
     id: "nav-biography",
-    title: "biography",
+    title: "Biography",
     description: "Biography page",
     section: "Navigation",
     handler: () => {
@@ -31,7 +31,7 @@ ninja.data = [
   },
   {
     id: "nav-acknowledgements",
-    title: "acknowledgements",
+    title: "Acknowledgements",
     description: "Acknowledgements section",
     section: "Navigation",
     handler: () => {
@@ -41,7 +41,7 @@ ninja.data = [
   {%- if about_page and about_page.home_sections and about_page.home_sections.show_timeline -%}
   {
     id: "nav-resume",
-    title: "resume",
+    title: "Resume",
     section: "Navigation",
     handler: () => {
       window.location.href = "{{ '/resume/' | relative_url }}";
@@ -139,8 +139,8 @@ ninja.data = [
           {%- capture social_url %}"https://discord.com/users/{{ social[1] }}"{% endcapture -%}
         {%- when "email" -%}
           {%- assign social_id = "social-email" -%}
-          {%- assign social_title = "email" -%}
-          {%- capture social_url %}"mailto:{{ social[1] | encode_email }}"{% endcapture -%}
+          {%- assign social_title = "Email" -%}
+          {%- capture social_url %}"{{ '/' | relative_url }}"{% endcapture -%}
         {%- when "facebook_id" -%}
           {%- assign social_id = "social-facebook" -%}
           {%- assign social_title = "Facebook" -%}
@@ -259,7 +259,7 @@ ninja.data = [
           {%- capture social_url %}"https://www.strava.com/athletes/{{ social[1] }}"{% endcapture -%}
         {%- when "telegram_username" -%}
           {%- assign social_id = "social-telegram" -%}
-          {%- assign social_title = "telegram" -%}
+          {%- assign social_title = "Telegram" -%}
           {%- capture social_url %}"https://telegram.me/{{ social[1] }}"{% endcapture -%}
         {%- when "unsplash_id" -%}
           {%- assign social_id = "social-unsplash" -%}
@@ -274,7 +274,7 @@ ninja.data = [
         {%- endcomment -%}
         {%- when "whatsapp_number" -%}
           {%- assign social_id = "social-whatsapp" -%}
-          {%- assign social_title = "whatsapp" -%}
+          {%- assign social_title = "WhatsApp" -%}
           {%- capture social_url %}"https://wa.me/{{ social[1] }}"{% endcapture -%}
         {%- when "wikidata_id" -%}
           {%- assign social_id = "social-wikidata" -%}
@@ -310,7 +310,7 @@ ninja.data = [
         title: '{{ social_title }}',
         section: 'Socials',
         handler: () => {
-          window.open({{ social_url }}, "_blank");
+          window.location.href = {{ social_url }};
         },
       },
     {%- endfor -%}

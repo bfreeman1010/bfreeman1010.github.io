@@ -218,6 +218,36 @@ html[data-theme="dark"] .publications .abbr .badge {
   color: var(--global-theme-color);
 }
 
+h2.category a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+h2.category a:hover,
+h2.category a:focus-visible {
+  color: var(--global-theme-color);
+}
+
+.section-title-no-line {
+  color: var(--global-text-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.term-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  cursor: default;
+}
+
+.term-link:hover,
+.term-link:focus-visible {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+
 /* Research Horizons Posters specific styling */
 .research-horizons-posters {
   display: grid;

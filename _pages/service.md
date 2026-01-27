@@ -2,7 +2,7 @@
 layout: page
 permalink: /service/
 title: Service
-description: Service activities and highlights.
+description: service activities and highlights.
 nav: true
 nav_order: 9
 ---

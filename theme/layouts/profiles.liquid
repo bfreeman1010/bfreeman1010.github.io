@@ -3,7 +3,7 @@ layout: page
 ---
 <div class="post">
   <article>
-    {% if page.permalink == "/people/" and site.data.icl.sections %}
+    {% if page.permalink == "/mission-statement/" and site.data.icl.sections %}
       {% for section in site.data.icl.sections %}
         <h2 class="icl-section-title">{{ section.title }}</h2>
         {{ section.body | markdownify }}
@@ -13,28 +13,30 @@ layout: page
       {% for section in site.data.people.sections %}
         <h2 class="category">{{ section.title }}</h2>
         {% for profile in section.profiles %}
-          {% unless forloop.first %}<hr>{% endunless %}
+          {% unless forloop.first %}<hr style="border: none; border-top: 1px solid var(--global-text-color); margin: 1.5rem 0;">{% endunless %}
           <div class="people-entry">
             <div class="people-card" style="display: flex; gap: 12px; align-items: flex-start;">
               {% if profile.photo %}
-                <img src="{{ profile.photo }}" alt="{{ profile.name | default: 'Team member photo' }}" style="width: 170px; height: 170px; object-fit: cover; border-radius: 6px;">
+                <div class="profile-photo-wrapper">
+                  {% include figure.liquid path=profile.photo class="profile-photo rounded" alt=profile.name zoomable=true %}
+                </div>
               {% endif %}
               <div class="people-text" style="flex: 1;">
                 {% if profile.name %}
                   <h3 style="margin: 0 0 6px 0;">{{ profile.name }}</h3>
                 {% endif %}
                 {% if profile.role %}
-                  <div style="font-weight: 600; margin-bottom: 8px;">{{ profile.role }}</div>
-                {% endif %}
-                {% if profile.bio %}
-                  <p style="margin: 0 0 8px 0;">{{ profile.bio }}</p>
+                  <div style="font-weight: 600; margin-bottom: 4px;">{{ profile.role }}</div>
                 {% endif %}
                 {% if profile.email %}
-                  <p style="margin: 0;">
-                    {% if profile.email %}
-                      <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>
-                    {% endif %}
+                  <p style="margin: 0 0 8px 0;">
+                    <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>
                   </p>
+                {% endif %}
+                {% if profile.bio %}
+                  <div class="profile-bio" onclick="this.classList.toggle('expanded')">
+                    <p class="bio-text">{{ profile.bio }}</p>
+                  </div>
                 {% endif %}
               </div>
             </div>
@@ -45,7 +47,7 @@ layout: page
       {% if page.grad_profiles %}
         <h2 class="people-section">Ph.D. and Master's Students</h2>
         {% for profile in page.grad_profiles %}
-          {% unless forloop.first %}<hr>{% endunless %}
+          {% unless forloop.first %}<hr style="border: none; border-top: 1px solid var(--global-text-color); margin: 1.5rem 0;">{% endunless %}
           <div class="people-entry">
             {% if profile.content %}
               {% include_relative {{ profile.content }} %}
@@ -59,7 +61,7 @@ layout: page
       {% if page.undergrad_profiles %}
         <h2 class="people-section">Undergraduate Students</h2>
         {% for profile in page.undergrad_profiles %}
-          {% unless forloop.first %}<hr>{% endunless %}
+          {% unless forloop.first %}<hr style="border: none; border-top: 1px solid var(--global-text-color); margin: 1.5rem 0;">{% endunless %}
           <div class="people-entry">
             {% if profile.content %}
               {% include_relative {{ profile.content }} %}
@@ -71,7 +73,7 @@ layout: page
       {% endif %}
     {% elsif page.profiles %}
       {% for profile in page.profiles %}
-        {% unless forloop.first %}<hr>{% endunless %}
+        {% unless forloop.first %}<hr style="border: none; border-top: 1px solid var(--global-text-color); margin: 1.5rem 0;">{% endunless %}
         <div class="people-entry">
           {% if profile.content %}
             {% include_relative {{ profile.content }} %}

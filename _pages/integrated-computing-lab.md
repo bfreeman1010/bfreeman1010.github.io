@@ -2,7 +2,7 @@
 layout: page
 title: Mission Statement
 permalink: /integrated-computing-lab/
-description: An interdisciplinary lab focused on AI, design, and manufacturing systems.
+description: an interdisciplinary lab focused on AI, design, and manufacturing systems.
 nav: false
 ---
 

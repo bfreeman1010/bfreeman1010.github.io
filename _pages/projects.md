@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Research projects, center affiliations, and repositories.
+description: research projects, center affiliations, and repositories.
 nav: false
 nav_order: 4
 display_categories: []
