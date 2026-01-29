@@ -5,8 +5,6 @@
       value: Cheng Chen
     - name: Email
       value: Cheng.chen@uah.edu
-    - name: Phone
-      value: 321-305-1613
 
 - title: Education
   type: time_table
